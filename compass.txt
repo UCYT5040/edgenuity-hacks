@@ -1,0 +1,7 @@
+// answer (correct option is green)
+setInterval(()=>{document.querySelector('frameset').querySelector('frame').contentDocument.querySelector('iframe').contentDocument.querySelectorAll('.answer').forEach((a)=>{if(a.offsetWidth > 0 && a.offsetHeight > 0){if(a.getAttribute('ak')=='true'){a.style.color='green'}}})},500)
+
+// video skipper (click on the video)
+setInterval(()=>{v=document.querySelector('frameset').querySelector('frame').contentDocument.querySelector('iframe').contentDocument.querySelector('video');v.onclick=()=>{v.currentTime=v.duration}},500)
+
+// sorry: the reading slides don't have a hack yet, but i'm working on it
