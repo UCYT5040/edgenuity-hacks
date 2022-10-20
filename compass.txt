@@ -4,4 +4,7 @@ setInterval(()=>{document.querySelector('frameset').querySelector('frame').conte
 // video skipper (click on the video)
 setInterval(()=>{v=document.querySelector('frameset').querySelector('frame').contentDocument.querySelector('iframe').contentDocument.querySelector('video');v.onclick=()=>{v.currentTime=v.duration}},500)
 
+// lesson skipper (not on quiz)
+completeActivity()
+
 // sorry: the reading slides don't have a hack yet, but i'm working on it
